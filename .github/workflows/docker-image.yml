@@ -37,4 +37,5 @@ jobs:
       run: |
         echo "Push Docker image"
         docker push ${{ secrets.DOCKER_USER }}/docker-graphql:0.0.2
+        docker push ${{ secrets.DOCKER_USER }}/docker-graphql:latest
         echo "Fin Push Docker image"
